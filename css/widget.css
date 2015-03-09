@@ -1,0 +1,17 @@
+.waf-listview2 {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.waf-listview2 ul {
+    position: relative;
+    list-style-type: none;
+}
+
+.waf-listview2 ul li {
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    padding: 8px;
+}

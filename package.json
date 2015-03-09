@@ -1,0 +1,26 @@
+{
+    "name": "ListView",
+    "type": "widget",
+    "studioName": "List View",
+    "category": "Custom Widgets",
+    "iconPath": "/icons/listview.png",
+    "author": "Wakanda SAS",
+    "contributors": [
+        "Yassine BOUKHATA"
+    ],
+    "version": "1.0.0",
+    "copyright": "(c) 2015 Wakanda SAS",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/developer/Widget.git"
+    },
+    "keywords": ["wakanda", "widget", "listview"],
+    "engines": {"wakanda": ">= 11"},
+    "license": "MIT",
+    "loadDependencies": [
+        {"package": "Text"},
+        {"file": "widget.js"},
+        {"file": "css/widget.css"},
+        {"file": "designer.js", "studioOnly": true}
+    ]
+}
