@@ -2,16 +2,149 @@
     overflow-x: hidden;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+    border: 1px solid;
+    padding:0;
 }
 
 .waf-listview2 ul {
     position: relative;
     list-style-type: none;
+    padding:5px !important;
 }
 
 .waf-listview2 ul li {
     position: absolute;
-    height: 30px;
+    cursor: pointer;
+    height: auto;
+    min-height: 2rem;
+    line-height:2rem;
     width: 100%;
-    padding: 8px;
+    margin: 0;
+    padding-left: .7rem !important;
+}
+
+.waf-listview2 ul li p {
+    vertical-align:middle;
+    margin: 0;
+    text-align:left !important;
+}
+
+.waf-listview2 ul li p img {
+    vertical-align:middle;
+    margin-right:.7rem;
+}
+
+.waf-listview2 ul li.waf-state-selected {
+    background: #A9E2F3;
+}
+
+/* DEFAULT */
+.waf-theme.default .waf-listview2 {
+    background-color: #fff;
+    border-color: #dcdcdc;
+}
+
+.waf-theme.default .waf-listview2 ul li {
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.waf-theme.default .waf-listview2 ul li:hover {
+    background: #f5f5f5;
+}
+
+/* LILAC */
+.waf-theme.lilac .waf-listview2 {
+    color: #4f5057;
+    border-color: #777985;
+    background: #e8eaf6; /* Old browsers */
+    background: -moz-linear-gradient(top,  #e8eaf6 0%, #d9dcf1 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8eaf6), color-stop(100%,#d9dcf1)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #e8eaf6 0%,#d9dcf1 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #e8eaf6 0%,#d9dcf1 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #e8eaf6 0%,#d9dcf1 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #e8eaf6 0%,#d9dcf1 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8eaf6', endColorstr='#d9dcf1',GradientType=0 ); /* IE6-9 */
+}
+
+.waf-theme.lilac .waf-listview2 ul li {
+    border-bottom: 1px solid #ced1e5;
+}
+
+.waf-theme.lilac .waf-listview2 ul li:hover {
+    color: #4c4d54;
+    text-shadow: 1px 1px 0px #d2af75;
+    background: #ffcf7b; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffcf7b 0%, #ffb22b 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffcf7b), color-stop(100%,#ffb22b)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffcf7b 0%,#ffb22b 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffcf7b 0%,#ffb22b 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffcf7b 0%,#ffb22b 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffcf7b 0%,#ffb22b 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcf7b', endColorstr='#ffb22b',GradientType=0 ); /* IE6-9 */
+}
+
+/* METAL */
+.waf-theme.metal .waf-listview2 {
+    color: #131313;
+    border-color: #999999;
+    background-color: #fff;
+    -moz-box-shadow: inset 0px 0px 5px 0px #757575;
+    -webkit-box-shadow: inset 0px 0px 5px 0px #757575;
+    -o-box-shadow: inset 0px 0px 5px 0px #757575;
+    box-shadow: inset 0px 0px 5px 0px #757575;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#757575, Direction=NaN, Strength=5);
+}
+
+.waf-theme.metal .waf-listview2 ul li {
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.waf-theme.metal .waf-listview2 ul li:hover {
+    background-color: #e5feff;
+    color: #07a1c8;
+}
+
+/* LIGHT */
+.waf-theme.light .waf-listview2 {
+    color: #767676;
+    border-color: #999999;
+    background-color: #fff;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.waf-theme.light .waf-listview2 ul li {
+    font-weight: bold;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.waf-theme.light .waf-listview2 ul li:hover {
+    background-color: #e5feff;
+    color: #07a1c8;
+}
+
+/* SOFT GRAY */
+.waf-theme.softGray .waf-listview2 {
+    color: #333333;
+    border-color: #cccccc;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.waf-theme.softGray .waf-listview2 ul li {
+    font-weight:normal;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.waf-theme.softGray .waf-listview2 ul li:hover {
+    background: #f9f8fa; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f9f8fa 0%, #e3e3eb 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f8fa), color-stop(100%,#e3e3eb)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f9f8fa 0%,#e3e3eb 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f9f8fa 0%,#e3e3eb 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f9f8fa 0%,#e3e3eb 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f9f8fa 0%,#e3e3eb 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f8fa', endColorstr='#e3e3eb',GradientType=0 ); /* IE6-9 */
 }
